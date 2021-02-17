@@ -54,7 +54,7 @@ header{
 }
 
 #navigation {
-  width: 80%;
+  display: grid;
   margin: auto;
 }
 
