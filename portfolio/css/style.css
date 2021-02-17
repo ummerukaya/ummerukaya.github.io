@@ -53,6 +53,11 @@ header{
   z-index: 2;
 }
 
+#navigation {
+  width: 80%;
+  margin: auto;
+}
+
 ul#nav .nav{
   margin-top: 10rem;
 }
@@ -92,7 +97,7 @@ ul#nav li.current a {
 }
 
 #nav-wrap ul {
-  margin: 0;
+  margin: auto;
   padding: 0;
   border: none;
   outline: none;
@@ -822,10 +827,10 @@ section{
 		width: 100%;
 	}
 	
-    .about .left img{
-     width: 300px;
+  #home .about .left img{
+     width: 100%;
      clip-path: circle();
-     margin: 1rem;
+     margin: auto;
     }
    .about .right h6{
 	font-size: 1rem;
@@ -889,13 +894,27 @@ section{
 	}
 
     .skills .skillitem{
-		flex-flow: column;
+		flex-direction: column;
 	}
-	.skills .skillimg img{
+
+  #resume .skills .skilllist {
+    width: 100%;
+  }
+
+  .skillist {
+    width: 100%;
+  }
+
+  #resume .skills .skillimg img {
+    width: 100%
+  }
+
+	.skillimg img{
 		margin-top: 1rem;
-		padding: 10px;
-	    height: 350px;
-	    width: 480px;
+		/*padding: 10px;*/
+	    /*height: 100%;*/
+	    width: 100%;
+      object-fit: contain;
     }
     .skills .skilllist{
 	margin:3rem 0;
@@ -905,6 +924,11 @@ section{
    	width: 85%;
    	margin-bottom: 1px;
    }
+
+   .skilllist li {
+    width: 100%;
+   }
+
    #projects h1{
   font-size: 1.5rem;
   font-weight: 600;
@@ -923,6 +947,7 @@ section{
   font-size: 1.5rem;
   font-weight: 600;
   margin: 0.5rem;
+  text-align: center;
    }
   #quotes h3{
   color:var(--pure);
@@ -983,6 +1008,10 @@ section{
   }
   #contact .wrapper form {
     width: 100%;
+  }
+
+  #footer h1 {
+    font-size: 12px;
   }
 }
 

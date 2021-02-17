@@ -12,7 +12,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-	<script src="js/jquery.js"></script>
+	<!-- <script src="js/jquery.js"></script> -->
 
 </head>
 
@@ -22,17 +22,19 @@
 
 		<nav id="nav-wrap">
 	    <div class="menu-button">
-		<a href="#" id="#menu"><i class="fa fa-bars fa-2x"></i>
+		<a href="javascript:void(0)" id="#menu"><i class="fa fa-bars fa-2x"></i>
 		</a>
 	    </div>
-	    <ul id="nav" class="nav">
+	   <div id="navigation">
+	   	 <ul id="nav" class="nav">
 		<li><a href="#home">home</a></li>
         <li><a href="#aboutme">about</a></li>
         <li><a href="#resume">Resume</a></li>
         <li><a href="#projects">Projects</a></li>
-         <li><a href="#quotes">Quotes</a></li>
+        <li><a href="#quotes">Quotes</a></li>
         <li><a href="#contact">contact</a></li>
 	    </ul>
+	   </div>
         </nav>
 
             
@@ -111,7 +113,7 @@
 				<h2></h2>
 				<div class="skillitem container flex items-center">
 				<div class="flex-1 skillimg">
-					<img src="./images/skills.jpg" alt="">
+					<img src="./images/skills.jpg" alt="" width="320px">
 				</div>
 				<div class="flex-1 skilllist">
 				<li>
@@ -350,7 +352,7 @@
         <a href="#" class="fab fa-linkedin"></a>
     </div>
 
-    <h1>&copy; copyright @ 2020 by <span>Umme Rukaya Suny</span></h1>
+    <h1>&copy; copyright @ 2021 by <span>Umme Rukaya Suny</span></h1>
 
 </section>
 
@@ -366,17 +368,12 @@ $(".menu-button").click(function () {
 	$(".nav").toggleClass("responsive");
 });
 
+ $('ul#nav li a').click(function(){
+ 	console.log('Clicked!')
+        $(".nav").removeClass("responsive");
+    });
+
 $(document).ready(function(){
-
-    $('.fa-bars').click(function(){
-        $(this).toggleClass('fa-times');
-        $('nav').toggleClass('nav-toggle');
-    });
-
-    $('nav ul li a').click(function(){
-        $('.fa-bars').removeClass('fa-times');
-        $('nav').removeClass('nav-toggle');
-    });
 
     $(window).scroll(function(){
         if($(window).scrollTop() < 20){
