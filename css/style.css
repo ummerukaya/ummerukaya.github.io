@@ -75,11 +75,13 @@ ul#nav li {
   font-size: 1.5rem;
   font-weight:600;
   color: var(--pure);
+
 }
 
 ul#nav li a {
   text-decoration: none;
   color: var(--pure);
+  text-transform: uppercase;
 }
 
 ul#nav li a:active {
