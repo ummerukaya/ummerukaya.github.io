@@ -1,7 +1,3 @@
-<?php
-session_start();
- ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +5,7 @@ session_start();
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-	<title>Welcome to eye's suhrid</title>
+	<title>eye care</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -22,6 +18,7 @@ session_start();
 	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
 </head>
+
 <body>
 
 	<!-- navbar starts -->
@@ -29,17 +26,14 @@ session_start();
 		<nav id="nav-wrap">
 		<div class="logo">
 			<div class="left">
-			<a id="logoeye" href="index.php"><i class="fas fa-eye"></i>
+			<a id="logoeye"><i class="fas fa-eye"></i>
 		</a>
 		<p>Eye's Suhrid</p>
 	    </div>
-	    <!--
 	    <div class="logbtn">
 	    	<a href="#" id="loginf" class="login">Log in</a>
-	        <button class="signup" onclick="document.getElementById('login-form').style.display='block'">Signup</button> 
+	       <!-- <button class="signup" onclick="document.getElementById('login-form').style.display='block'">Signup</button> -->
 	    </div>
-
-		-->
 		</div>
 	    <div class="menu-button">
 		<a href="javascript:void(0)" id="#menu"><i class="fa fa-bars fa-2x"></i>
@@ -47,24 +41,11 @@ session_start();
 	    </div>
 	    <div id="navigation">
 	   	<ul id="nav" class="nav">
-		<li><a href="index.php">home</a></li>
-        <li><a href="eyecon.php" class="active">eye conditions</a></li>
-        <li><a href="eyecare.php">eye care</a></li>
-        <li><a href="testeye.php">test your eyes</a></li>
-        <li><a href="specialists.php">Eye Specialists</a></li>
-
-		<?php
-        if(isset($_SESSION["userid"])) {
-           echo "<li><a href='profile.php'>Profile</a></li>";
-            echo "<li><a href='logout.php'>logout</a></li>";
-        }
-
-        else {
-            echo "<li><a href='signup.php'>Signup</a></li>";
-            echo "<li><a href='login.php'>login</a></li>";
-        }
-
-        ?>
+		<li><a href="index.html">home</a></li>
+        <li><a href="eyecon.html">eye conditions</a></li>
+        <li><a href="eyecare.html" class="active">eye care</a></li>
+        <li><a href="testeye.html">test your eyes</a></li>
+        <li><a href="specialists.html">Eye Specialists</a></li>
 	    </ul>
 	   </div>
         </nav>
@@ -76,19 +57,11 @@ session_start();
 	<!-- home section starts -->
 
 <section id="home">
-      <div id='banner' class="banner">
-      	<div class="container">
-      		<h1 class="banner-title">
-      			<span>Your Eye Conditions</span>
-      		</h1>
-      		<p>everything you want to know about the eye disease you are suffering from</p>
-      		<form>
-      			<input type="text" class="search-input" placeholder="find the eye disease">
-      			<button type="submit" class="search-btn">
-      				<i class="fas fa-search"></i>
-      			</button>
-      		</form>
-      	</div>
+      <div id="banner" class="eyecareabout">
+      <div class="title">
+	  <h1>A guid for looking after your eyes.</h1>
+	  <p>Your eyes are affected by your lifestyle and health conditions elsewhere in your body. Our useful, easy to follow advice will help you to protect your vision and keep your eyes healthy throughout the year.</p>
+      </div>
       </div>
       <div id='login-form'class='login-page'>
             <div class="form-box">
@@ -119,129 +92,127 @@ session_start();
 
 <!-- home section ends -->
 
-
 <!--blog starts-->
 <section class="blog" id="blog">
 	<div class="container">
-	
 		<div class="blog-content">
 			<!--items-->
 			<div class="blog-item">
 				<div class="blog-img">
-					<img src="./images/visual disturbance.jpg" alt="">
+					<img src="./images/screenuse.jpg" alt="">
 					
 					<span><i class="fa fa-thumbs-o-up"></i></span>
 						
 				</div>
 				<div class="blog-text">
-					<h2>Visual Disturbance</h2>
-					<p>A visual disturbance is when you experience a short spell of flashing or shimmering of light in your sight. The symptoms normally last around twenty minutes before your sight returns to normal. Usually, there is no headache during the visual disturbance.</p>
-					<a href="visualdis.php">Read More</a>
+					<h2>Screen use</h2>
+					<p>Many people worry that viewing a screen can damage their eyes. There is no evidence of this. In fact, because you can alter the size, brightness and contrast of the display, it can easier and more comfortable to see on a screen compared with looking at things on paper. However, some people find that looking at a screen for a long time is tiring.</p>
+					<a href="screenuse.html">Read More</a>
 				</div>
 			</div>
 			<!--items end-->
 			<!--items-->
 			<div class="blog-item">
 				<div class="blog-img">
-					<img src="./images/flashes.jpg" alt="">
+					<img src="./images/healthyfood.jpg" alt="">
 					
 						<span><i class="fa fa-thumbs-o-up"></i></span>
 					
 				</div>
 				<div class="blog-text">
-					<h2>Flashes and floaters</h2>
-					<p>Flashes appear as small sparkles, lightening or fireworks usually in the extreme corners of your vision. They may come and go. Floaters are more visible in bright light, or if you are looking at a plain bright background such as a cloudless sky or white wall.</p>
-					<a href="flashes.php">Read More</a>
+					<h2>Eat for healthy eyes</h2>
+					<p>Eating a wide variety of fruit and vegetables, including dark green leaves, is good for your general health and may support good eye health. Eating healthily will help you to maintain a healthy weight, which helps keep your blood pressure under control. High blood pressure increases your risk of stroke, which happens when a blood vessel in your brain bleeds or becomes blocked.</p>
+					<a href="eatforhealthyeyes.html">Read More</a>
 				</div>
 			</div>
 			<!--items end-->
             <!--items-->
 			<div class="blog-item">
 				<div class="blog-img">
-					<img src="./images/glucoma.jpg" alt="">
+					<img src="./images/homeimp.jpg" alt="">
 				
 						<span><i class="fa fa-thumbs-o-up"></i></span>
 					
 				</div>
 				<div class="blog-text">
-					<h2>Glaucoma</h2>
-					<p>Glaucoma is a group of eye diseases in which the optic nerve, which connects the eye to the brain, is damaged by the pressure of the fluid inside your eye. It can affect one or both of your eyes and can lead to sight loss if not treated. </p>
-					<a href="glaucoma.php">Read More</a>
+					<h2>Home improvement</h2>
+					<p>How to protect your eyes while carrying out DIY and what to do in case of an accident. According to the Eye Health UK, DIY activity in the home and garden is the cause of more than 20,000 eye injuries each year. Some of these have led to serious permanent eye damage and loss of sight. </p>
+					<a href="homeimprovement.html">Read More</a>
 				</div>
 			</div>
 			<!--items end-->
 			<!--items-->
 			<div class="blog-item">
 				<div class="blog-img">
-					<img src="./images/blurred.jpg" alt="">
+					<img src="./images/highblood.png" alt="">
 					
 						<span><i class="fa fa-thumbs-o-up"></i></span>
 						
 				</div>
 				<div class="blog-text">
-					<h2>blurred vision</h2>
-					<p>When you have blurred vision, your eyesight is less sharp and objects, images and words seem to be out of focus. Anyone can be affected by blurred vision. It could be a sign of getting older and/or needing new glasses, tiredness, or too much sun.</p>
-					<a href="blurred.php">Read More</a>
+					<h2>High blood pressure</h2>
+					<p>High blood pressure increases your risk of stroke, which happens when a blood vessel in your brain bleeds or becomes blocked. This can cause blind spots in your vision, if it is in the part of the brain that you use to see with. High blood pressure also increases the likelihood of a blood vessel in your eye bleeding.</p>
+					<a href="highbloodpressure.html">Read More</a>
 				</div>
 			</div>
 			<!--items end-->
 			<!--items-->
 			<div class="blog-item">
 				<div class="blog-img">
-					<img src="./images/agerelatedmacular.jpg" alt="">
+					<img src="./images/healthyvision.jpg" alt="">
 					
 						<span><i class="fa fa-thumbs-o-up"></i></span>
 					
 				</div>
 				<div class="blog-text">
-					<h2>Age-related macular degeneration</h2>
-					<p>The macula is an area at the back of your eye that is responsible for your central vision, most of your colour vision and making out fine detail. When the macula is damaged, it becomes harder to recognise faces.</p>
-					<a href="armd.php">Read More</a>
+					<h2>Maintaining your vision</h2>
+					<p>Be aware of your vision in each eye separately. Many conditions appear in one eye first. If you regularly check your vision (with glasses if you need them) by covering each eye in turn, you are more likely to notice changes. If you notice changes in your vision you should contact your optometrist for advice.</p>
+					<a href="maintainingyourvision.html">Read More</a>
 				</div>
 			</div>
 			<!--items end-->
 			<!--items-->
 			<div class="blog-item">
 				<div class="blog-img">
-					<img src="./images/conjunctivitis.jpg" alt="">
-					
-						<span><i class="fa fa-thumbs-o-up"></i></span>
-						
-				</div>
-				<div class="blog-text">
-					<h2>Conjunctivitis</h2>
-					<p>Conjunctivitis, or pink eye, is an inflammation of the conjunctiva, which is the clear membrane that covers the white of your eye. It may be caused by an infection, or by an allergy.</p>
-					<a href="conjunc.php">Read More</a>
-				</div>
-			</div>
-			<!--items end-->
-			<!--items-->
-			<div class="blog-item">
-				<div class="blog-img">
-					<img src="./images/diabetic.jpg" alt="">
-					
-						<span><i class="fa fa-thumbs-o-up"></i></span>
-					
-				</div>
-				<div class="blog-text">
-					<h2>diabetic retinopathy</h2>
-					<p>If you have diabetic retinopathy, the small blood vessels in your retina leak blood and fluid into the retina – the light-sensitive layer of cells at the back of your eye. Although this does not affect your vision in the early stages, if it is left untreated it may lead to sight loss.</p>
-					<a href="diabetic.php">Read More</a>
-				</div>
-			</div>
-			<!--items end-->
-			<!--items-->
-			<div class="blog-item">
-				<div class="blog-img">
-					<img src="./images/colourblind.jpg" alt="">
+					<img src="./images/children.jpg" alt="">
 					
 						<span><i class="fa fa-thumbs-o-up"></i></span>
 						
 				</div>
 				<div class="blog-text">
-					<h2>colour blindness</h2>
-					<p>Most ‘colour blind’ people are able to see things as clearly as other people but they have difficulty distinguishing between some colours. This may have an impact upon a child’s performance at school or on the sports field.</p>
-					<a href="colorblind.php">Read More</a>
+					<h2>Children eye health</h2>
+					<p>Being able to see clearly is important for a child’s overall development and helps them to discover and learn about their world. Most children have excellent sight and do not need to wear glasses, but if there are problems and they are not picked up at an early age, your child may have permanently reduced.</p>
+					<a href="childreneyehealth.html">Read More</a>
+				</div>
+			</div>
+			<!--items end-->
+			<!--items-->
+			<div class="blog-item">
+				<div class="blog-img">
+					<img src="./images/interesting.jpg" alt="">
+					
+						<span><i class="fa fa-thumbs-o-up"></i></span>
+					
+				</div>
+				<div class="blog-text">
+					<h2>Eye facts and fiction</h2>
+					<p>It is more difficult to see in the dark or in dim light than in brighter light, so you may get a headache if you read in the dark, but you will not cause yourself any harm. The membrane that covers the white of your eye also lines your eyelids, so it is impossible for a contact lens to get lost behind your eyes.</p>
+					<a href="eyesfactandfiction.html">Read More</a>
+				</div>
+			</div>
+			<!--items end-->
+			<!--items-->
+			<div class="blog-item">
+				<div class="blog-img">
+					<img src="./images/sunanduv.jpg" alt="">
+					
+						<span><i class="fa fa-thumbs-o-up"></i></span>
+						
+				</div>
+				<div class="blog-text">
+					<h2>Sun and UV light</h2>
+					<p>If you spend time outdoors in the sunshine or on a sunbed, then you need to protect your eyes from harmful ultraviolet (UV) light. Exposure to ultraviolet (UV) light has been linked to certain eye conditions including cataract. Looking directly at the sun may cause a solar burn of the retina.</p>
+					<a href="sunanduvlight.html">Read More</a>
 				</div>
 			</div>
 			<!--items end-->
@@ -253,7 +224,7 @@ session_start();
 <!-- blog ends -->
 
 
-<!-- footer section starts  -->
+	<!-- footer section starts  -->
 
 <section id="footer">
 
@@ -310,7 +281,7 @@ $(document).ready(function(){
 		}
 	</script>
 	<script>
-        var modal = document.getElementById('login-form');
+       var modal = document.getElementById('login-form');
         var modal1 = document.getElementById('banner');
         var log = document.getElementById('loginf');
         log.onclick= function(event){
@@ -333,6 +304,5 @@ $(document).ready(function(){
             }
         }
     </script>
-    
 </body>
 </html>

@@ -1,14 +1,11 @@
-<?php
-session_start();
- ?>
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-	<title>Welcome to eye's suhrid</title>
+	<title>Colour Blindness</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -21,6 +18,7 @@ session_start();
 	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
 </head>
+
 <body>
 
 	<!-- navbar starts -->
@@ -28,7 +26,7 @@ session_start();
 		<nav id="nav-wrap">
 		<div class="logo">
 			<div class="left">
-			<a id="logoeye" href="index.php"><i class="fas fa-eye"></i>
+			<a id="logoeye"><i class="fas fa-eye"></i>
 		</a>
 		<p>Eye's Suhrid</p>
 	    </div>
@@ -43,23 +41,11 @@ session_start();
 	    </div>
 	    <div id="navigation">
 	   	<ul id="nav" class="nav">
-		<li><a href="index.php">home</a></li>
-        <li><a href="eyecon.php" class="active">eye conditions</a></li>
-        <li><a href="eyecare.php">eye care</a></li>
-        <li><a href="testeye.php">test your eyes</a></li>
-        <li><a href="specialists.php">Eye Specialists</a></li>
-		<?php
-        if(isset($_SESSION["userid"])) {
-           echo "<li><a href='profile.php'>Profile</a></li>";
-            echo "<li><a href='logout.php'>logout</a></li>";
-        }
-
-        else {
-            echo "<li><a href='signup.php'>Signup</a></li>";
-            echo "<li><a href='login.php'>login</a></li>";
-        }
-
-        ?>
+		<li><a href="index.html">home</a></li>
+        <li><a href="eyecon.html" class="active">eye conditions</a></li>
+        <li><a href="eyecare.html">eye care</a></li>
+        <li><a href="testeye.html">test your eyes</a></li>
+        <li><a href="specialists.html">Eye Specialists</a></li>
 	    </ul>
 	   </div>
         </nav>
@@ -71,11 +57,11 @@ session_start();
 <!--about starts -->
 
 <section id="aboutdisease">
-	<div class="container aboutdis">
+	<div class="aboutdis">
 		<h2>What is colour blindness?</h2>
-<p>Most ‘colour blind’ people are able to see things as clearly as other people but they have difficulty distinguishing between some colours. This may have an impact upon a child’s performance at school or on the sports field and can also affect career options, for example joining the army or becoming a pilot. As most colour blind people can see some colours, it is better to describe it as a colour vision deficiency (CVD). There are some people who are unable to see any colour at all, but this is very rare.<br><br>
+<p>Most ‘colour blind’ people are able to see things as clearly as other people but they have difficulty distinguishing between some colours. This may have an impact upon a child’s performance at school or on the sports field and can also affect career options, for example joining the army or becoming a pilot. As most colour blind people can see some colours, it is better to describe it as a colour vision deficiency (CVD). There are some people who are unable to see any colour at all, but this is very rare.</br></br>
 
-In the normal eye there are three different types of cones. Some cones are best at capturing long wavelength (red) light. Others catch medium wavelength (green) light, while other cones respond best to short wavelength (blue) light. The signals from these cones are sent to the brain where they are perceived as colour. People with CVD are born with one or more cone types absent or different.<br><br>
+In the normal eye there are three different types of cones. Some cones are best at capturing long wavelength (red) light. Others catch medium wavelength (green) light, while other cones respond best to short wavelength (blue) light. The signals from these cones are sent to the brain where they are perceived as colour. People with CVD are born with one or more cone types absent or different.</br></br>
 
 Most people with CVD are red/green deficient, which means they mix up all colours with some red or green in them. For example, a red/green CVD person will confuse blue and purple because they can’t ‘see’ the red element in purple. This is more severe in some forms of CVD than in others.</p>
 
@@ -83,7 +69,7 @@ Most people with CVD are red/green deficient, which means they mix up all colour
 <p>Colour vision may be affected by some eye diseases, but the most common cause of CVD is genetic. The gene for this is transmitted on the X chromosome (from your mother) and so it mainly affects men and boys, with around 8% of males and 0.5% of females having CVD. There are around 3 million people in the UK with some kind of CVD.</p>
 
 <h2>What are the symptoms of colour blindness?</h2>
-<p>If someone has CVD they may have difficulties distinguishing between different types of food – for example mistaking chocolate sauce for ketchup. It may also be very hard to get a child with CVD to try green vegetables as they will look unappetising. Older children may confuse the red and green lights on their games console.<br><br>
+<p>If someone has CVD they may have difficulties distinguishing between different types of food – for example mistaking chocolate sauce for ketchup. It may also be very hard to get a child with CVD to try green vegetables as they will look unappetising. Older children may confuse the red and green lights on their games console.</br></br>
 
 If you have any concerns about your child’s vision, make an appointment for an eye examination with your optometrist. This will be paid for by the NHS. There are many tests available to measure colour vision.</p>
 

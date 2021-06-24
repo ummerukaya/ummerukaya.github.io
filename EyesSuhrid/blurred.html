@@ -1,14 +1,11 @@
-<?php
-session_start();
- ?>
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-	<title>Welcome to eye's suhrid</title>
+	<title>Blurred Vision</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -21,15 +18,15 @@ session_start();
 	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
 </head>
-<body>
 
+<body>
 
 	<!-- navbar starts -->
 	<header>
 		<nav id="nav-wrap">
 		<div class="logo">
 			<div class="left">
-			<a id="logoeye" href="index.php"><i class="fas fa-eye"></i>
+			<a id="logoeye"><i class="fas fa-eye"></i>
 		</a>
 		<p>Eye's Suhrid</p>
 	    </div>
@@ -44,23 +41,11 @@ session_start();
 	    </div>
 	    <div id="navigation">
 	   	<ul id="nav" class="nav">
-		<li><a href="index.php">home</a></li>
-        <li><a href="eyecon.php">eye conditions</a></li>
-        <li><a href="eyecare.php" class="active">eye care</a></li>
-        <li><a href="testeye.php">test your eyes</a></li>
-        <li><a href="specialists.php">Eye Specialists</a></li>
-		<?php
-        if(isset($_SESSION["userid"])) {
-           echo "<li><a href='profile.php'>Profile</a></li>";
-            echo "<li><a href='logout.php'>logout</a></li>";
-        }
-
-        else {
-            echo "<li><a href='signup.php'>Signup</a></li>";
-            echo "<li><a href='login.php'>login</a></li>";
-        }
-
-        ?>
+		<li><a href="index.html">home</a></li>
+        <li><a href="eyecon.html" class="active">eye conditions</a></li>
+        <li><a href="eyecare.html">eye care</a></li>
+        <li><a href="testeye.html">test your eyes</a></li>
+        <li><a href="specialists.html">Eye Specialists</a></li>
 	    </ul>
 	   </div>
         </nav>
@@ -72,14 +57,34 @@ session_start();
 <!--about starts -->
 
 <section id="aboutdisease">
-	<div class="container aboutdis">
-		<p>Eating a wide variety of fruit and vegetables, including dark green leaves, is good for your general health and may support good eye health. Eating healthily will help you to maintain a healthy weight, which helps keep your blood pressure under control. High blood pressure increases your risk of stroke, which happens when a blood vessel in your brain bleeds or becomes blocked. It can affect your vision if it is in the part of the brain that you use to see with, causing blind spots in your vision. High blood pressure also increases the likelihood of a blood vessel in your eye bleeding or becoming blocked which may seriously affect your vision and in some cases lead to total sight loss in one eye.</p>
+	<div class="aboutdis">
+		<h2>What is blurred vision?</h2>
+<p>When you have blurred vision, your eyesight is less sharp and objects, images and words seem to be out of focus.</p>
 
-<p>Having high cholesterol also increases your risk of stroke. Make sure you eat a healthy balanced diet that is low in fatty food, take regular exercise and, if you smoke, give up. If you’re aged 40 to 74, you can get your cholesterol checked as part of an NHS Health Check.</p>
+<h2>Who is affected by blurred vision?</h2>
+<p>Anyone can be affected by blurred vision. It could be a sign of getting older and/or needing new glasses, tiredness, or too much sun. But there are many other causes and it could be one of the symptoms of a range of conditions including:
+<ul>
+<li>Short-sightedness (myopia), long-sightedness (hyperopia), astigmatism and presbyopia</li>
+<li>An eye injury which may have scratched the cornea</li>
+<li>Foreign object in the eye</li>
+<li>Eye drops</li>
+<li>Dry eye</li>
+<li>Cataracts</li>
+<li>Age-related macular degeneration</li>
+<li>A migraine</li>
+</ul>
+Blurred vision can also be a symptom of non-optical conditions such as a diabetes, a stroke and preeclampsia (a condition caused by high blood pressure in pregnancy).</p>
 
-<h2>Dietary supplements</h2>
-<p>There are lots of dietary supplements on the market which claim to be beneficial for eye health. There is no good evidence that the general population should be taking these supplements, but they may be helpful for some people who have existing AMD. Your optometrist will be able to advise you.</p>
-    </div>
+<h2>What are the symptoms of blurred vision?</h2>
+<p>Blurred vision is hazy and unfocussed, as though you were looking through an oily film and you feel you need to rub your eyes to get things back into focus.</br></br>
+
+It can affect your entire field of vision or your peripheral vision (the edges of your vision), and can occur in one eye or both. You may not realise that you have blurred vision in one eye until you do something that requires shutting your other eye – for example, doing your make up. This is because your brain provides compensation.</p>
+
+<h2>How do you treat blurred vision?</h2>
+<p>As blurred vision has many possible causes, the treatment will depend on the condition. If the blurring is recurring or ongoing, you should book an eye examination with your optometrist. They will investigate the cause and recommend suitable treatment, or refer you to an appropriate specialist.</br></br>
+
+If you think it may be one of the symptoms of a serious medical condition such as stroke or pre-eclampsia, you should seek urgent medical help.</p>
+</div>
 </section>
 <!--about ends-->
 

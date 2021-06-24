@@ -1,14 +1,11 @@
-<?php
-session_start();
- ?>
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-	<title>Welcome to eye's suhrid</title>
+	<title>Sun and ultraviolet (UV) light</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -21,15 +18,15 @@ session_start();
 	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
 </head>
-<body>
 
+<body>
 
 	<!-- navbar starts -->
 	<header>
 		<nav id="nav-wrap">
 		<div class="logo">
 			<div class="left">
-			<a id="logoeye" href="index.php"><i class="fas fa-eye"></i>
+			<a id="logoeye"><i class="fas fa-eye"></i>
 		</a>
 		<p>Eye's Suhrid</p>
 	    </div>
@@ -44,23 +41,11 @@ session_start();
 	    </div>
 	    <div id="navigation">
 	   	<ul id="nav" class="nav">
-		<li><a href="index.php">home</a></li>
-        <li><a href="eyecon.php">eye conditions</a></li>
-        <li><a href="eyecare.php" class="active">eye care</a></li>
-        <li><a href="testeye.php">test your eyes</a></li>
-        <li><a href="specialists.php">Eye Specialists</a></li>
-		<?php
-        if(isset($_SESSION["userid"])) {
-           echo "<li><a href='profile.php'>Profile</a></li>";
-            echo "<li><a href='logout.php'>logout</a></li>";
-        }
-
-        else {
-            echo "<li><a href='signup.php'>Signup</a></li>";
-            echo "<li><a href='login.php'>login</a></li>";
-        }
-
-        ?>
+		<li><a href="index.html">home</a></li>
+        <li><a href="eyecon.html">eye conditions</a></li>
+        <li><a href="eyecare.html" class="active">eye care</a></li>
+        <li><a href="testeye.html">test your eyes</a></li>
+        <li><a href="specialists.html">Eye Specialists</a></li>
 	    </ul>
 	   </div>
         </nav>
@@ -72,11 +57,11 @@ session_start();
 <!--about starts -->
 
 <section id="aboutdisease">
-	<div class="container aboutdis">
+	<div class="aboutdis">
 		<p>If you spend time outdoors in the sunshine or on a sunbed, then you need to protect your eyes from harmful ultraviolet (UV) light. Exposure to ultraviolet (UV) light has been linked to certain eye conditions including cataract, and there may be a link between exposure to UV light and age-related macular degeneration (AMD).</p>
 
 <h2>Protecting your eyes from the sun</h2>
-<p>If you are spending time outdoors, especially in the summer or on holidays abroad, make sure that you and your children have good quality, dark sunglasses with UV protection. Look for the British Standard (BS EN ISO 12312-1:2013) or the CE mark, which is the manufacturer’s assurance that the sunglasses have been made to the appropriate safety standards. You can also protect your eyes by making sure to wear a hat with a brim or a sun visor in bright sunlight. You will need stronger protection if you are taking part in winter sports.<br>
+<p>If you are spending time outdoors, especially in the summer or on holidays abroad, make sure that you and your children have good quality, dark sunglasses with UV protection. Look for the British Standard (BS EN ISO 12312-1:2013) or the CE mark, which is the manufacturer’s assurance that the sunglasses have been made to the appropriate safety standards. You can also protect your eyes by making sure to wear a hat with a brim or a sun visor in bright sunlight. You will need stronger protection if you are taking part in winter sports.</br>
 
 Scientific studies have shown that children who spend time outdoors are less likely to be short-sighted, and some eye problems are linked to unhealthy lifestyles. So don’t stop your child exercising outdoors – just make sure their eyes are properly protected.</p>
 
@@ -98,7 +83,7 @@ Scientific studies have shown that children who spend time outdoors are less lik
 
 <p>A pinhole projector (see diagram above) involves putting a hole in a piece of card, and holding the card up with your back to the sun so that an image of the sun is projected onto another piece of paper or card. This will allow you to see the progress of the eclipse without damaging your eyes.
 
-You will need:</p>
+You will need:
 <ul>
 <li>one piece of stiff card</li>
 <li>one sheet of white paper</li>
@@ -106,7 +91,7 @@ You will need:</p>
 <ol>
 <li>Make a small hole in the card using the pin and hold the card in front of the sun.</li>
 <li>Hold the paper at a distance in front of the card – the sun will project through your pinhole on to the paper screen.</li>
-<li>Adjust the distance between the card and paper to make the image of the sun larger but remember, your back should always face the sun and don’t look through the pinhole.</li></li></ol></ul>
+<li>Adjust the distance between the card and paper to make the image of the sun larger but remember, your back should always face the sun and don’t look through the pinhole.</li></li></ol></ul></p>
 <h3>Are there other ways to watch the eclipse?</h3>
 <p>Watching a webcam or television broadcast is an easy and safe alternative to using a pinhole projector.</p>
 

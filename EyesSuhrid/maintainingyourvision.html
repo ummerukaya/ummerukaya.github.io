@@ -1,14 +1,11 @@
-<?php
-session_start();
- ?>
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-	<title>Welcome to eye's suhrid</title>
+	<title>Maintaining your vision</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -21,15 +18,15 @@ session_start();
 	<script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
 </head>
-<body>
 
+<body>
 
 	<!-- navbar starts -->
 	<header>
 		<nav id="nav-wrap">
 		<div class="logo">
 			<div class="left">
-			<a id="logoeye" href="index.php"><i class="fas fa-eye"></i>
+			<a id="logoeye"><i class="fas fa-eye"></i>
 		</a>
 		<p>Eye's Suhrid</p>
 	    </div>
@@ -44,23 +41,11 @@ session_start();
 	    </div>
 	    <div id="navigation">
 	   	<ul id="nav" class="nav">
-		<li><a href="index.php">home</a></li>
-        <li><a href="eyecon.php" class="active">eye conditions</a></li>
-        <li><a href="eyecare.php">eye care</a></li>
-        <li><a href="testeye.php">test your eyes</a></li>
-        <li><a href="specialists.php">Eye Specialists</a></li>
-		<?php
-        if(isset($_SESSION["userid"])) {
-           echo "<li><a href='profile.php'>Profile</a></li>";
-            echo "<li><a href='logout.php'>logout</a></li>";
-        }
-
-        else {
-            echo "<li><a href='signup.php'>Signup</a></li>";
-            echo "<li><a href='login.php'>login</a></li>";
-        }
-
-        ?>
+		<li><a href="index.html">home</a></li>
+        <li><a href="eyecon.html">eye conditions</a></li>
+        <li><a href="eyecare.html" class="active">eye care</a></li>
+        <li><a href="testeye.html">test your eyes</a></li>
+        <li><a href="specialists.html">Eye Specialists</a></li>
 	    </ul>
 	   </div>
         </nav>
@@ -72,40 +57,15 @@ session_start();
 <!--about starts -->
 
 <section id="aboutdisease">
-	<div class="container aboutdis">
-	<h2>What is diabetic retinopathy?</h2>
-<p>If you have diabetic retinopathy, the small blood vessels in your retina leak blood and fluid into the retina – the light-sensitive layer of cells at the back of your eye. Although this does not affect your vision in the early stages, if it is left untreated it may lead to sight loss.</p>
-
-<h2>Who is affected by diabetic retinopathy?</h2>
-<p>Diabetic retinopathy affects people with type 1 or type 2 diabetes, especially if you:</p>
+	<div class="aboutdis">
+	<p>How can I look after my eyes and vision?
 <ul>
-<li>have high levels of blood sugar</li>
-<li>have high blood pressure</li>
-<li>have high cholesterol</li>
-<li>are pregnant</li>
-<li>are of Asian or Afro-Caribbean background.</li></ul>
-<p>You can reduce your chances of developing diabetic retinopathy by keeping your blood sugar, blood pressure and cholesterol levels under control.</p>
-
-<h2>What are the symptoms of diabetic retinopathy?</h2>
-<p>The early stages of diabetic retinopathy do not usually have any particular symptoms, so if you are diabetic it is important that you are regularly checked for diabetic retinopathy. With a few exceptions, the NHS arranges for all people who have diabetes and are aged 12 and over to be invited to have screening for diabetic retinopathy. Most people with diabetes will need to have the screening done every year. It is very important that you have this done regularly, as early detection of diabetic retinopathy means that treatment is more effective.<br><br>
-
-If the condition progresses, you may experience the following symptoms:
-<ul>
-<li>gradually worsening vision</li>
-<li>sudden vision loss</li>
-<li>shapes floating in your field of vision (floaters)</li>
-<li>blurred or patchy vision</li>
-<li>eye pain or redness.</li>
-</ul>
-</p>
-<h2>How do you treat diabetic retinopathy?</h2>
-<p>
-You will usually be treated for diabetic retinopathy in hospital. The main treatments are:
-
-injections of medication into your eyes
-laser treatment
-an operation to remove blood or scar tissue from your eyes.</p>
-</div>
+<li>Have regular eye examinations. This will allow your optometrist to spot early signs of eye disease, when it is easier to treat. Most people should have an eye examination at least every two years.</li>
+<li>Stop smoking. Smoking has been linked to cataracts and age-related macular degeneration (AMD) (the leading cause of sight loss in the UK). NHS services are available to help you quit. Visit nhs.uk/smokefree for more information.
+Eat a diet that is rich in leafy greens and coloured fruit and vegetables and maintain a healthy weight. This may reduce your risk of developing AMD.</li>
+<li>Be aware of your vision in each eye separately. Many conditions appear in one eye first. If you regularly check your vision (with glasses if you need them) by covering each eye in turn, you are more likely to notice changes. If you notice changes in your vision you should contact your optometrist for advice. Things you should look out for include straight lines (such as door or window frames) appearing distorted or wavy, or seeing blank or blurry spots in your vision.</li>
+<li>Wear sunglasses. Sunlight can increase the long-term risk of developing conditions such as cataracts. Good sunglasses don’t need to be expensive: you can purchase perfectly adequate protective sunglasses from high street stores. Look out for glasses carrying the “CE” Mark and British Standard BS EN ISO 12312-1:2013, which ensures that the sunglasses offer a safe level of UV protection. Go for reasonably dark glasses: for example, dark brown offers more protection than light grey.</li></ul></p>
+    </div>
 </section>
 <!--about ends-->
 
