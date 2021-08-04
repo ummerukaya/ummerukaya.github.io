@@ -73,6 +73,7 @@ html{
     height: 2px;
 }
 
+
 #black{
     display: block;
 }
@@ -105,6 +106,7 @@ html{
     font-size: 0.9rem;
 }
 
+
 #specifications .row .name{
     font-weight: bold;
     font-size: 1rem;
@@ -113,6 +115,10 @@ html{
 
 #specifications .row .quality{
     text-transform: none;
+}
+
+#specifications .body .table .row1:hover{
+    background-color:#9cb2e4 ;
 }
 
 
@@ -127,6 +133,10 @@ html{
         width: 100%;
     }
 
+    #about .header .nav-item{
+        margin-left: 0rem;
+    }
+
     .body .container{
         width: 100%;
         font-size: 90%;
@@ -137,8 +147,16 @@ html{
         height: 100%;
     }
 
-    #specifications .name{
-        font-size: 50%;
+    #specifications .table .head div{
+        font-size: 95%;
+    }
+
+    #specifications .row .name{
+        font-size: 95%;
+    }
+
+    #specifications .row .quality{
+        font-size: 95%;
     }
 
     #footer .d-flex{
