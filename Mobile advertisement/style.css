@@ -1,0 +1,159 @@
+
+
+body{
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+    overflow-x: hidden;
+    /* background-color: grey; */
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	-webkit-font-smoothing:antialiased;
+	-webkit-box-sizing: border-box;
+      box-sizing: border-box;
+     text-transform: capitalize;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+html{
+	font-size: 100%;
+    /* -webkit-text-size-adjust: 100%; */
+  scroll-behavior: smooth;
+}
+
+
+#about{
+    display: block;
+    width: 100%;
+    background-color: #1f49aa;
+}
+
+#about .nav li{
+    cursor: pointer;
+}
+
+.navbar{
+   box-shadow: 0px 3px 0px 0px rgb(196, 196, 196);
+}
+
+.nav-tabs .nav-item{
+    padding-bottom: 0rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+
+.nav-item{
+    font-weight: medium;
+    font-family: "Helvetica";
+    padding: 0.5rem;
+}
+
+
+.navbar-nav li:hover{
+    background-color: #6883c2;
+}
+
+
+ #about .container-xxl h4{
+     padding:auto;
+     margin: 1rem;
+     font-size: 1rem;
+     font-weight: bold;
+}
+
+#about hr{
+    display: block;
+    color: white;
+    height: 2px;
+}
+
+#black{
+    display: block;
+}
+
+#blue{
+    display: none;
+}
+
+#white{
+    display: none;
+}
+
+#specifications h2{
+    font-weight: bold;
+}
+
+#specifications .row .head{
+    background-color: #6b87ca;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: white;
+    padding: auto;
+}
+
+#specifications .row{
+    background-color: #d8dde7;
+    border-bottom: 1px solid rgb(206, 202, 202);
+    margin: auto;
+    font-weight: medium;
+    font-size: 0.9rem;
+}
+
+#specifications .row .name{
+    font-weight: bold;
+    font-size: 1rem;
+    border-right: 1px solid white;
+}
+
+#specifications .row .quality{
+    text-transform: none;
+}
+
+
+
+@media(max-width: 991px)
+{
+    .nav-item {
+        margin-left: 1rem;
+    }
+
+    #about .container-xxl{
+        width: 100%;
+    }
+
+    .body .container{
+        width: 100%;
+        font-size: 90%;
+    }
+    
+    .body .row img{
+        width: 100%;
+        height: 100%;
+    }
+
+    #specifications .name{
+        font-size: 50%;
+    }
+
+    #footer .d-flex{
+        flex-flow:column;
+    }
+    
+    #footer .d-flex p{
+        text-align: center;
+        text-transform: none;
+    }
+
+  
+    
+}
+
+
+
+
