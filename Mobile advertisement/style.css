@@ -121,13 +121,18 @@ html{
     background-color:#9cb2e4 ;
 }
 
-
+#footer{
+    align-items: center;
+    text-align: center;
+    text-transform: none;
+}
 
 @media(max-width: 991px)
 {
     .nav-item {
         margin-left: 1rem;
     }
+
 
     #about .container-xxl{
         width: 100%;
@@ -161,8 +166,9 @@ html{
 
     #footer .d-flex{
         flex-flow:column;
+        align-items: center;
     }
-    
+
     #footer .d-flex p{
         text-align: center;
         text-transform: none;
